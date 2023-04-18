@@ -67,7 +67,30 @@ namespace ExerciciosEstruturaSequencial {
 
             */
 
+            /* Exercício 05 - Fazer um programa para ler o código de uma peça 1, a quantidade dessa peça, o valor unitário, o código de uma peça 2, quantidade e seu valor unitário. Calcular e mostrar o valor a ser pago.
 
+            Console.WriteLine("Digite o código da primeira peça, quantidade e o valor unitário (na mesma linha): ");
+            string[] peca1 = Console.ReadLine().Split(' ');
+            int codPeca1 = int.Parse(peca1[0]);
+            int quantPeca1 = int.Parse(peca1[1]);
+            double valorPeca1 = double.Parse(peca1[2], CultureInfo.InvariantCulture);
+
+            Console.WriteLine("Digite o código da segunda peça, quantidade e o valor unitário (na mesma linha): ");
+            string[] peca2 = Console.ReadLine().Split(' ');
+            int codPeca2 = int.Parse(peca2[0]);
+            int quantPeca2 = int.Parse(peca2[1]);
+            double valorPeca2 = double.Parse(peca2[2], CultureInfo.InvariantCulture);
+
+            double valor1, valor2, total;
+
+            valor1 = valorPeca1 * quantPeca1;
+            valor2 = valorPeca2 * quantPeca2;
+
+            total = valor1 + valor2;
+
+            Console.WriteLine("Valor a pagar: R$" + total.ToString("F2"), CultureInfo.InvariantCulture);
+
+            */
 
 
 
