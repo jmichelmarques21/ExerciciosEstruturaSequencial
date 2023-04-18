@@ -92,7 +92,38 @@ namespace ExerciciosEstruturaSequencial {
 
             */
 
+            /* Exercício 06 - Fazer um programa que leia três valores com ponto flutuante de dupla precisão: A, B e C. Em seguida, calcule e mostre: 
+            a) a área do triângulo retângulo que tem A por base e C por altura;
+            b) a área do círculo de raio C. (pi = 3.14159);
+            c) a área do trapézio que tem A e B por bases e C por altura;
+            d) a área do quadrado que tem lado B;
+            e) a área do retângulo que tem lados A e B.
 
+            
+
+            Console.WriteLine("Digite 3 valores double (na mesma linha): ");
+            string[] vet = Console.ReadLine().Split(' ');
+            double a = double.Parse(vet[0], CultureInfo.InvariantCulture);
+            double b = double.Parse(vet[1], CultureInfo.InvariantCulture);
+            double c = double.Parse(vet[2], CultureInfo.InvariantCulture);
+
+
+            double pi = 3.14159;
+            double triangulo = (a * c) / 2;
+            double circulo = pi * Math.Pow(c, 2);
+            double trapezio = (((a + b) * c) / 2);
+            double quadrado = Math.Pow(b, 2);
+            double retangulo = a * b;
+
+            Console.WriteLine();
+
+            Console.WriteLine("Triângulo: " + triangulo.ToString("F3"), CultureInfo.InvariantCulture);
+            Console.WriteLine("Círculo: " + circulo.ToString("F3"), CultureInfo.InvariantCulture);
+            Console.WriteLine("Trapézio: " + trapezio.ToString("F3"), CultureInfo.InvariantCulture);
+            Console.WriteLine("Quadrado: " + quadrado.ToString("F3"), CultureInfo.InvariantCulture);
+            Console.WriteLine("Retângulo: " + retangulo.ToString("F3"), CultureInfo.InvariantCulture);
+
+            */
 
 
 
